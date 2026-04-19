@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TradeGun | AI Copilot for Binance Traders</title>
+    <meta
+      name="description"
+      content="TradeGun is an AI trading copilot for Binance that delivers market insights, auto trade levels, and seamless in-chart guidance."
+    />
+    <!-- Pre-launch docs: Tailwind CDN is intentionally used for a no-build setup. Replace with compiled CSS before production launch. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-gray-100 antialiased">
+    <div class="min-h-screen flex flex-col">
+      <header class="border-b border-gray-800 bg-gray-900/95 backdrop-blur sticky top-0 z-30">
+        <nav class="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between" aria-label="Main navigation">
+          <a href="./index.html" class="text-xl font-bold tracking-tight text-white">Trade<span class="text-blue-400">Gun</span></a>
+          <div class="flex items-center gap-6 text-sm">
+            <a href="./privacy.html" class="text-gray-300 hover:text-white transition">Privacy</a>
+            <a href="./terms.html" class="text-gray-300 hover:text-white transition">Terms</a>
+          </div>
+        </nav>
+      </header>
+
+      <main class="flex-1">
+        <section class="mx-auto max-w-6xl px-6 pt-24 pb-16 text-center">
+          <p class="inline-flex items-center rounded-full border border-blue-500/40 bg-blue-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-blue-300">
+            Chrome Extension for Binance
+          </p>
+          <h1 class="mt-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white">
+            Trade Smarter on Binance
+          </h1>
+          <p class="mt-6 mx-auto max-w-3xl text-lg text-gray-300 leading-relaxed">
+            TradeGun is your AI copilot for live market context, cleaner decision workflows, and faster chart reviews—directly inside the Binance experience you already use.
+          </p>
+          <div class="mt-10">
+            <a
+              href="#chrome-store-status"
+              class="inline-flex items-center justify-center rounded-xl bg-blue-500 px-8 py-4 text-base font-semibold text-white shadow-lg shadow-blue-500/20 hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 focus:ring-offset-gray-900 transition"
+            >
+              Add to Chrome
+            </a>
+            <p id="chrome-store-status" class="mt-4 text-sm text-gray-400">
+              Chrome Web Store listing is coming soon.
+            </p>
+          </div>
+        </section>
+
+        <section class="mx-auto max-w-6xl px-6 pb-20">
+          <div class="grid gap-6 md:grid-cols-3">
+            <article class="rounded-2xl border border-gray-800 bg-gray-800/50 p-6">
+              <h2 class="text-xl font-semibold text-white">AI Market Insights</h2>
+              <p class="mt-3 text-gray-300 leading-relaxed">
+                Get real-time analytical guidance on Binance pairs with AI-powered context designed to support disciplined trading decisions.
+              </p>
+            </article>
+            <article class="rounded-2xl border border-gray-800 bg-gray-800/50 p-6">
+              <h2 class="text-xl font-semibold text-white">Auto Trade Levels</h2>
+              <p class="mt-3 text-gray-300 leading-relaxed">
+                Instantly review suggested entry, stop-loss, and target zones so you can evaluate risk-to-reward setups with less manual work.
+              </p>
+            </article>
+            <article class="rounded-2xl border border-gray-800 bg-gray-800/50 p-6">
+              <h2 class="text-xl font-semibold text-white">Seamless Binance UI Integration</h2>
+              <p class="mt-3 text-gray-300 leading-relaxed">
+                TradeGun appears where you need it, directly within Binance pages, helping you stay focused without switching between tools.
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="border-t border-gray-800">
+        <div class="mx-auto max-w-6xl px-6 py-8 text-sm text-gray-400 space-y-3">
+          <p>
+            <strong class="text-gray-200">Financial Disclaimer:</strong> TradeGun is an analytical software tool for educational and informational purposes only. It does not provide financial, investment, legal, or tax advice. All trading decisions are made solely by you and at your own risk.
+          </p>
+          <p>© <span id="year"></span> TradeGun. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
